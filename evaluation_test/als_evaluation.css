@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: 'Inter', 'Arial', sans-serif;
+    --color-positive: steelblue;
+    --color-negative: tomato;
+}
+
+input[type='radio'] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #FFF;
+    
+    /* border: 1px solid var(--radio-color); */
+    height: var(--radio-size);
+    width: var(--radio-size);
+
+    display: flex;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: center;
+    position: relative;
+
+    cursor: pointer;
+}
+
+input[type="radio"]::before {
+    content: '';
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    
+    border: 1px solid var(--radio-color);
+    
+    height: var(--radio-size);
+    width: var(--radio-size);
+    
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+input[type="radio"]:checked::before {
+    background: var(--radio-color);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #FFF;
+}
+
+@media (min-width: 320px) {
+    .survey {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .question_text {
+        font-size: 1.2em;
+        margin: 20px auto 25px auto;
+        text-align: center;
+    }
+
+    .question_mask {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .answer_mask {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .answer_mask .answer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 50px;
+    }
+
+    .answer_mask .answer .label {
+        color: #ccc;
+        font-size: 0.8em;
+    }
+
+    .radio_6 {
+        --radio-size: 2em;
+        --radio-color: var(--color-positive);
+    }
+
+    .radio_5 {
+        --radio-size: 1.5em;
+        --radio-color: var(--color-positive);
+    }
+
+    .radio_4 {
+        --radio-size: 1em;
+        --radio-color: var(--color-positive);
+    }
+
+    .radio_3 {
+        --radio-size: 1em;
+        --radio-color: var(--color-negative);
+    }
+
+    .radio_2 {
+        --radio-size: 1.5em;
+        --radio-color: var(--color-negative);
+    }
+
+    .radio_1 {
+        --radio-size: 2em;
+        --radio-color: var(--color-negative);
+    }
+
+}
