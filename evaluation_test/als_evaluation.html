@@ -9,79 +9,24 @@
     </head>
     <body>
         <section class="survey">
-            <div class="question_mask">
-                <h1 class="question_text"> Dies ist eine Testfrage mit 6 Antwortmöglichkeiten.</h1>
-                <div class="answer_mask">
-                    <item class="answer stimme_garnicht_zu">
-                        <input class="radio_1" type="radio" name="Frage 1" id="frage_1_stimme_garnicht_zu" value="1"> <br>
-                        <label for="frage_1_stimme_garnicht_zu" class="answer label">Stimme <br> garnicht zu</label>
-                    </item>
-                    <item class="answer stimme_nicht_zu">
-                        <input class="radio_2" type="radio" name="Frage 1" id="frage_1_stimme_nicht_zu" value="2">
-                    </item>
-                    <item class="answer stimme_eher_nicht_zu">
-                        <input class="radio_3" type="radio" name="Frage 1" id="frage_1_stimme_eher_nicht_zu" value="3">
-                    </item>
-                    <item class="answer stimme_eher_zu">
-                        <input class="radio_4" type="radio" name="Frage 1" id="frage_1_stimme_eher_zu" value="4">
-                    </item>
-                    <item class="answer stimme_zu">
-                        <input class="radio_5" type="radio" name="Frage 1" id="frage_1_stimme_zu", value="5">
-                    </item>
-                    <item class="answer stimme_sehr_zu">
-                        <input class="radio_6" type="radio" name="Frage 1" id="frage_1_stimme_sehr_zu" value="6"> <br>
-                        <label for="frage_1_stimme_sehr_zu" class="answer label">Stimme <br> sehr zu</label>
-                    </item>
-                </div>
-            </div>
-            <div class="question_mask">
-                <h1 class="question_text"> Dies ist eine weitere Testfrage mit 6 Antwortmöglichkeiten.</h1>
-                <div class="answer_mask">
-                    <item class="answer stimme_garnicht_zu">
-                        <input class="radio_1" type="radio" name="Frage 2" id="frage_2_stimme_garnicht_zu" value="1"> <br>
-                        <label for="frage_2_stimme_garnicht_zu" class="answer label">Stimme <br> garnicht zu</label>
-                    </item>
-                    <item class="answer stimme_nicht_zu">
-                        <input class="radio_2" type="radio" name="Frage 2" id="frage_2_stimme_nicht_zu" value="2">
-                    </item>
-                    <item class="answer stimme_eher_nicht_zu">
-                        <input class="radio_3" type="radio" name="Frage 2" id="frage_2_stimme_eher_nicht_zu" value="3">
-                    </item>
-                    <item class="answer stimme_eher_zu">
-                        <input class="radio_4" type="radio" name="Frage 2" id="frage_2_stimme_eher_zu" value="4">
-                    </item>
-                    <item class="answer stimme_zu">
-                        <input class="radio_5" type="radio" name="Frage 2" id="frage_2_stimme_zu", value="5">
-                    </item>
-                    <item class="answer stimme_sehr_zu">
-                        <input class="radio_6" type="radio" name="Frage 2" id="frage_2_stimme_sehr_zu" value="6"> <br>
-                        <label for="frage_2_stimme_sehr_zu" class="answer label">Stimme <br> sehr zu</label>
-                    </item>
-                </div>
-            </div>
-            <div class="question_mask">
-                <h1 class="question_text"> Dies ist eine weitere Testfrage mit 6 Antwortmöglichkeiten.</h1>
-                <div class="answer_mask">
-                    <item class="answer stimme_garnicht_zu">
-                        <input class="radio_1" type="radio" name="Frage 3" id="frage_3_stimme_garnicht_zu" value="1"> <br>
-                        <!-- <label for="frage_3_stimme_garnicht_zu" class="answer label">Stimme <br> garnicht zu</label> -->
-                    </item>
-                    <item class="answer stimme_nicht_zu">
-                        <input class="radio_2" type="radio" name="Frage 3" id="frage_3_stimme_nicht_zu" value="2">
-                    </item>
-                    <item class="answer stimme_eher_nicht_zu">
-                        <input class="radio_3" type="radio" name="Frage 3" id="frage_3_stimme_eher_nicht_zu" value="3">
-                    </item>
-                    <item class="answer stimme_eher_zu">
-                        <input class="radio_4" type="radio" name="Frage 3" id="frage_3_stimme_eher_zu" value="4">
-                    </item>
-                    <item class="answer stimme_zu">
-                        <input class="radio_5" type="radio" name="Frage 3" id="frage_3_stimme_zu", value="5">
-                    </item>
-                    <item class="answer stimme_sehr_zu">
-                        <input class="radio_6" type="radio" name="Frage 3" id="frage_3_stimme_sehr_zu" value="6"> <br>
-                        <!-- <label for="frage_3_stimme_sehr_zu" class="answer label">Stimme <br> sehr zu</label> -->
-                    </item>
+            <div class="input_mask">
+                <h1 class="statement" id="statement_1">
+                    Sie schließen regelmäßig neue Freundschaften.
+                </h1>
+                <div class="radio_buttons">
+                    <div class="options">
+                        <input class="radio_large" type="radio" name="variable" value="Ich stimme voll und ganz zu" id="variable_option_1">
+                        <input class="radio_mid" type="radio" name="variable" value="Ich stimme zu" id="variable_option_2">
+                        <input class="radio_small" type="radio" name="variable" value="Ich stimme eher zu" id="variable_option_3">
+                        <input class="radio_indecisive" type="radio" name="variable" value="Ich bin mir nicht sicher" id="variable_option_4">
+                        <input class="radio_small_negative" type="radio" name="variable" value="Ich stimme eher nicht zu" id="variable_option_5">
+                        <input class="radio_mid_negative" type="radio" name="variable" value="Ist stimme nicht zu" id="variable_option_6">
+                        <input class="radio_large_negative" type="radio" name="variable" value="Ich stimme überhaupt nicht zu" id="variable_option_7">
+                    </div>
+                    <div class="caption">
+                        <label class="caption_positive" for="statement_1">STIMMT</label>
+                        <label class="caption_negative" for="statement_1">STIMMT NICHT</label>
+                    </div>
                 </div>
             </div>
 

@@ -2,8 +2,9 @@
 
 * {
     font-family: 'Inter', 'Arial', sans-serif;
-    --color-positive: steelblue;
-    --color-negative: tomato;
+    --color-positive: #0C4A6F; /*33A474 */
+     --color-negative: #C61928; /* #886199 */
+    --color-indecisive: #9B9FAA;
 }
 
 input[type='radio'] {
@@ -11,13 +12,11 @@ input[type='radio'] {
     appearance: none;
     background: #FFF;
     
-    /* border: 1px solid var(--radio-color); */
     height: var(--radio-size);
     width: var(--radio-size);
+    border-radius: 100%;
 
     display: flex;
-    border-radius: 50%;
-    display: inline-block;
     vertical-align: center;
     position: relative;
 
@@ -30,12 +29,11 @@ input[type="radio"]::before {
     left: -1px;
     top: -1px;
     
-    border: 1px solid var(--radio-color);
-    
     height: var(--radio-size);
     width: var(--radio-size);
-    
-    border-radius: 50%;
+
+    border: 2px solid var(--radio-color);
+    border-radius: 100%;
     overflow: hidden;
 }
 
@@ -49,75 +47,81 @@ body {
     background: #FFF;
 }
 
+.statement {
+    font-size: var(--font-size-sb);
+    font-weight: var(--font-weight-sb);
+    text-align: center;
+    color: #576071;
+    line-height: 1.5;
+}
+
+
 @media (min-width: 320px) {
-    .survey {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        justify-items: center;
+    * {
+        --font-size-sb: 18px;
+        --font-weight-sb: 550;
     }
 
-    .question_text {
-        font-size: 1.2em;
-        margin: 20px auto 25px auto;
-        text-align: center;
-    }
-
-    .question_mask {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .answer_mask {
+    .options {
+        max-width: 500px;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
-        justify-items: center;
+        justify-content: space-between;
         align-items: center;
-        align-content: center;
+        margin-bottom: 16px;
     }
 
-    .answer_mask .answer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .caption {
+        max-width: 500px;
+        font-weight: 450;
+        font-size: 13px;
         text-align: center;
-        width: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto 4px auto 4px;
     }
 
-    .answer_mask .answer .label {
-        color: #ccc;
-        font-size: 0.8em;
+    .caption_positive {
+        color: var(--color-positive);
     }
 
-    .radio_6 {
-        --radio-size: 2em;
+    .caption_negative {
+        color: var(--color-negative);
+    }
+
+    .radio_large {
+        --radio-size: 45px;
         --radio-color: var(--color-positive);
     }
 
-    .radio_5 {
-        --radio-size: 1.5em;
+    .radio_mid {
+        --radio-size: 35px;
         --radio-color: var(--color-positive);
     }
 
-    .radio_4 {
-        --radio-size: 1em;
+    .radio_small {
+        --radio-size: 25px;
         --radio-color: var(--color-positive);
     }
 
-    .radio_3 {
-        --radio-size: 1em;
+    .radio_indecisive {
+        --radio-size: 20px;
+        --radio-color: var(--color-indecisive);
+    }
+
+    .radio_small_negative {
+        --radio-size: 25px;
         --radio-color: var(--color-negative);
     }
 
-    .radio_2 {
-        --radio-size: 1.5em;
+    .radio_mid_negative {
+        --radio-size: 35px;
         --radio-color: var(--color-negative);
     }
 
-    .radio_1 {
-        --radio-size: 2em;
+    .radio_large_negative {
+        --radio-size: 45px;
         --radio-color: var(--color-negative);
     }
 
