@@ -6,7 +6,7 @@
     --color-positive: #0C4A6F; /*33A474 */
     --color-negative: #C61928; /* #886199 */
     --color-indecisive: #9B9FAA;
-    --color-background: #F5F5F5;
+    --color-background: #FEFEFE;
 
     background-color: var(--color-background);
 }
