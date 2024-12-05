@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ALS Evaluation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="disclaimer">
+            <p>
+                Die Auswertung der Umfrage erfolgt ausschließlich zu Evaluationszwecken und dient der Verbesserung des Kurses. Alle personenbezogenen Daten (Name und Geburtsdatum) werden anonymisiert und gemäß der <a href="https://dsgvo-gesetz.de/" target=”_blank”>DSGVO</a> gespeichert. Deine Daten bleiben  vertraulich und werden nicht an Dritte weitergegeben. Die Umfrage ist freiwillig und kann jederzeit abgebrochen werden.
+            </p>
+            <p>
+                Mit dem Absenden der Umfrage erklärst du dich mit den oben genannten Bedingungen einverstanden.
+            </p>
+            <p>
+                <b>Vielen Dank für Deine Teilnahme!</b>
+            </p>
+        </section>
+        <section class="survey">
+            <div class="identification">
+                <div class="names">
+                    <label for="name">Vorname<span class="required">*</span></label><br>
+                    <input class="id_field" type="text" id="name" name="name" required><br>
+                    <label for="surname">Nachname<span class="required">*</span></label><br>
+                    <input class="id_field" type="text" id="surname" name="surname" required>
+                </div>
+                <div class="birthdate">
+                    <label for="birthdate">Geburtsdatum<span class="required">*</span></label><br>
+                    <input class="id_field" type="date" id="birthdate" name="birthdate" required>
+                </div>
+            </div>
+            <div class="input_mask">
+                <h1 class="statement" id="statement_1">
+                    Ich bin zufrieden mit der Gesamtqualität des Kurses.
+                </h1>
+                <div class="radio_buttons">
+                    <div class="options">
+                        <input class="radio_large" type="radio" name="gesamtqualität" value="Ich stimme voll und ganz zu" id="gesamtqualität_option_1">
+                        <input class="radio_mid" type="radio" name="gesamtqualität" value="Ich stimme zu" id="gesamtqualität_option_2">
+                        <input class="radio_small" type="radio" name="gesamtqualität" value="Ich stimme eher zu" id="gesamtqualität_option_3">
+                        <input class="radio_indecisive" type="radio" name="gesamtqualität" value="Ich bin mir nicht sicher" id="gesamtqualität_option_4">
+                        <input class="radio_small_negative" type="radio" name="gesamtqualität" value="Ich stimme eher nicht zu" id="gesamtqualität_option_5">
+                        <input class="radio_mid_negative" type="radio" name="gesamtqualität" value="Ist stimme nicht zu" id="gesamtqualität_option_6">
+                        <input class="radio_large_negative" type="radio" name="gesamtqualität" value="Ich stimme überhaupt nicht zu" id="gesamtqualität_option_7">
+                    </div>
+                    <div class="caption">
+                        <label class="caption_positive" for="statement_1">STIMMT</label>
+                        <label class="caption_negative" for="statement_1">STIMMT NICHT</label>
+                    </div>
+                </div>
+            </div>
+            <div class="input_mask">
+                <h1 class="statement" id="statement_1">
+                    Ich bin zufrieden mit der Organisation des Kurses.
+                </h1>
+                <div class="radio_buttons">
+                    <div class="options">
+                        <input class="radio_large" type="radio" name="organisation" value="Ich stimme voll und ganz zu" id="organisation_option_1">
+                        <input class="radio_mid" type="radio" name="organisation" value="Ich stimme zu" id="organisation_option_2">
+                        <input class="radio_small" type="radio" name="organisation" value="Ich stimme eher zu" id="organisation_option_3">
+                        <input class="radio_indecisive" type="radio" name="organisation" value="Ich bin mir nicht sicher" id="organisation_option_4">
+                        <input class="radio_small_negative" type="radio" name="organisation" value="Ich stimme eher nicht zu" id="organisation_option_5">
+                        <input class="radio_mid_negative" type="radio" name="organisation" value="Ist stimme nicht zu" id="organisation_option_6">
+                        <input class="radio_large_negative" type="radio" name="organisation" value="Ich stimme überhaupt nicht zu" id="organisation_option_7">
+                    </div>
+                    <div class="caption">
+                        <label class="caption_positive" for="statement_1">STIMMT</label>
+                        <label class="caption_negative" for="statement_1">STIMMT NICHT</label>
+                    </div>
+                </div>
+            </div>
+            <div class="input_mask">
+                <h1 class="statement" id="statement_1">
+                    Die theoretischen Einführungen haben mich gut auf die praktischen Übungen vorbereitet.
+                </h1>
+                <div class="radio_buttons">
+                    <div class="options">
+                        <input class="radio_large" type="radio" name="theoretische_einführung" value="Ich stimme voll und ganz zu" id="theoretische_einführung_option_1">
+                        <input class="radio_mid" type="radio" name="theoretische_einführung" value="Ich stimme zu" id="theoretische_einführung_option_2">
+                        <input class="radio_small" type="radio" name="theoretische_einführung" value="Ich stimme eher zu" id="theoretische_einführung_option_3">
+                        <input class="radio_indecisive" type="radio" name="theoretische_einführung" value="Ich bin mir nicht sicher" id="theoretische_einführung_option_4">
+                        <input class="radio_small_negative" type="radio" name="theoretische_einführung" value="Ich stimme eher nicht zu" id="theoretische_einführung_option_5">
+                        <input class="radio_mid_negative" type="radio" name="theoretische_einführung" value="Ist stimme nicht zu" id="theoretische_einführung_option_6">
+                        <input class="radio_large_negative" type="radio" name="theoretische_einführung" value="Ich stimme überhaupt nicht zu" id="theoretische_einführung_option_7">
+                    </div>
+                    <div class="caption">
+                        <label class="caption_positive" for="statement_1">STIMMT</label>
+                        <label class="caption_negative" for="statement_1">STIMMT NICHT</label>
+                    </div>
+                </div>
+            </div>
+            <div class="input_mask">
+                <h1 class="statement" id="statement_1">
+                    Das Verhältnis zwischen Theorie und Praxis war gut.
+                </h1>
+                <div class="radio_buttons">
+                    <div class="options">
+                        <input class="radio_large" type="radio" name="verhältnis_theorie_praxis" value="Ich stimme voll und ganz zu" id="verhältnis_theorie_praxis_option_1">
+                        <input class="radio_mid" type="radio" name="verhältnis_theorie_praxis" value="Ich stimme zu" id="verhältnis_theorie_praxis_option_2">
+                        <input class="radio_small" type="radio" name="verhältnis_theorie_praxis" value="Ich stimme eher zu" id="verhältnis_theorie_praxis_option_3">
+                        <input class="radio_indecisive" type="radio" name="verhältnis_theorie_praxis" value="Ich bin mir nicht sicher" id="verhältnis_theorie_praxis_option_4">
+                        <input class="radio_small_negative" type="radio" name="verhältnis_theorie_praxis" value="Ich stimme eher nicht zu" id="verhältnis_theorie_praxis_option_5">
+                        <input class="radio_mid_negative" type="radio" name="verhältnis_theorie_praxis" value="Ist stimme nicht zu" id="verhältnis_theorie_praxis_option_6">
+                        <input class="radio_large_negative" type="radio" name="verhältnis_theorie_praxis" value="Ich stimme überhaupt nicht zu" id="verhältnis_theorie_praxis_option_7">
+                    </div>
+                    <div class="caption">
+                        <label class="caption_positive" for="statement_1">STIMMT</label>
+                        <label class="caption_negative" for="statement_1">STIMMT NICHT</label>
+                    </div>
+                </div>
+            </div>
+
+    </body>
+</html>

@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 * {
     font-family: 'Inter', 'Arial', sans-serif;
     --color-positive: #0C4A6F; /*33A474 */
-     --color-negative: #C61928; /* #886199 */
+    --color-negative: #C61928; /* #886199 */
     --color-indecisive: #9B9FAA;
+    --color-background: #F5F5F5;
+
+    background-color: var(--color-background);
 }
 
 input[type='radio'] {
     -webkit-appearance: none;
     appearance: none;
-    background: #FFF;
+    background: var(--color-background);
     
     height: var(--radio-size);
     width: var(--radio-size);
@@ -38,6 +42,17 @@ input[type="radio"]::before {
 }
 
 input[type="radio"]:checked::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Material Icons";
+    content: "\e5ca";
+    color: var(--color-background);
+    background: var(--radio-color);
+}
+
+input[type="radio"]:hover::before {
+    transition: 120ms ease-in-out;
     background: var(--radio-color);
 }
 
@@ -62,6 +77,52 @@ body {
         --font-weight-sb: 550;
     }
 
+    .disclaimer {
+        font-size: 16px;
+        color: #000;
+        text-align: justify;
+        line-height: 1.5;
+        margin-top: 20px;
+    }
+
+    .identification {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-bottom: 20px;
+        margin-top: 20px;
+        border-bottom: 1px solid #E0E0E0;
+    }
+
+    .names label {
+        font-size: calc(var(--font-size-sb)-10%);
+        font-weight: var(--font-weight-sb);
+        color: #576071;
+    }
+
+    .birthdate label {
+        font-size: calc(var(--font-size-sb)-10%);
+        font-weight: var(--font-weight-sb);
+        color: #576071;
+    }
+
+    .required {
+        margin-left: 3px;
+        color: #C61928;
+    }
+
+    .id_field {
+        min-width: 250px;
+        margin-bottom: 20px;
+        font-weight: 500;
+        color: #aaa;
+    }
+
+    .statement {
+        max-width: 290px;
+    }
+
     .input_mask {
         max-width: 100%;
 
@@ -74,7 +135,8 @@ body {
     }
 
     .radio_buttons {
-        min-width: 320px;
+        max-width: 310px;
+        min-width: 290px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -112,36 +174,43 @@ body {
     }
 
     .radio_large {
+        font-size: calc(var(--radio-size)*0.56);
         --radio-size: 45px;
         --radio-color: var(--color-positive);
     }
 
     .radio_mid {
+        font-size: calc(var(--radio-size)*0.56);
         --radio-size: 35px;
         --radio-color: var(--color-positive);
     }
 
     .radio_small {
+        font-size: calc(var(--radio-size)*0.56);
         --radio-size: 25px;
         --radio-color: var(--color-positive);
     }
 
     .radio_indecisive {
+        font-size: calc(var(--radio-size)*0.56);
         --radio-size: 20px;
         --radio-color: var(--color-indecisive);
     }
 
     .radio_small_negative {
+        font-size: calc(var(--radio-size)*0.56);
         --radio-size: 25px;
         --radio-color: var(--color-negative);
     }
 
     .radio_mid_negative {
+        font-size: calc(var(--radio-size)*0.56);
         --radio-size: 35px;
         --radio-color: var(--color-negative);
     }
 
     .radio_large_negative {
+        font-size: calc(var(--radio-size)*0.56);
         --radio-size: 45px;
         --radio-color: var(--color-negative);
     }
